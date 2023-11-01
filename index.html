@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0;" />
+    <title>Azmar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Mate&family=Yellowtail&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+    <header id="header" class="page-header">
+
+        <div class="title">
+            <span class="hsd-title">Azmar</span>
+        </div>
+        <button class="menu-toggle" id="toggle-menu">
+
+            <i class="fa fa-navicon" style="font-size:18pt;"></i>
+        </button>
+    </header>
+
+    <nav class="menu" id="main-menu">
+
+        <div class="menu-dropdown">
+            <ul class="nav-menu dropdown_menu dropdown_menu-4">
+                <li class="dropdown_item-1"><a href="/about.html">Menu</a></li>
+                <li class="dropdown_item-2"><a href="/shop.html">Location</a></li>
+                <li class="dropdown_item-3"><a href="/menu.html">Delivery</a></li>
+
+            </ul>
+        </div>
+    </nav>
+
+
+    <aside id="hero" class="hero">
+        <div class="hero-1">
+            Welcome to Azmar Restaurant
+        </div>
+    </aside>
+
+    <div class="mainImg">
+        <img class="mImg" src="p2.jpg" alt="home" />
+    </div>
+
+    <div class="viewMenuBtn">
+        <button class="vMBtn">
+            View menu
+
+        </button>
+    </div>
+
+
+
+
+    <footer>
+        <div class="mainFooter">
+            <div class="contactFooter">
+                <div class="contactTitle">
+                    Dentistry
+                </div>
+                <div class="footerItem">
+                    Family Dentistry
+                </div>
+                <div class="footerItem">
+                    Orthodontics
+                </div>
+                <div class="footerItem">
+                    Implants
+                </div>
+                <div class="footerItem">
+                    Emergency Dentist
+                </div>
+            </div>
+            <div class="contactFooter">
+                <div class="contactTitle">
+                    Contact
+                </div>
+                <div class="footerItem">
+                    Contact Us
+                </div>
+                <div class="footerItem">
+                    Book Appointment
+                </div>
+                <div class="footerItem">
+                    Free E-consultation
+                </div>
+                <div class="footerItem">
+                    Getting to us in Hampstead
+                </div>
+            </div>
+
+        </div>
+        <div class="copyright">
+            Copyright © 2017 - 2023 All Rights Reserved.
+            <br>
+            Heath Street Dental, 116 Heath Street, Hampstead, London, NW3 1DR
+            <br>
+            Hampstead Dentist
+            <br>
+            0207 813 5000
+        </div>
+
+    </footer>
+
+
+    <script type="text/javascript">
+        (function () {
+            var button = document.getElementById("toggle-menu");
+            var menu = document.getElementById("main-menu");
+
+            button.addEventListener("click", function (event) {
+                event.preventDefault();
+                menu.classList.toggle("is-open");
+            });
+
+            // Event listener to close the menu when clicking outside of it
+            document.addEventListener("click", function (event) {
+                if (!menu.contains(event.target) && !button.contains(event.target)) {
+                    menu.classList.remove("is-open");
+                }
+            });
+        })();
+
+
+
+    </script>
+</body>
+
+
+</html>

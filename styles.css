@@ -1,0 +1,263 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: clamp(0.875em, 0.5svw + 0.6em, 1.125em);
+}
+
+body {
+    margin: 0;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.page-header {
+    padding: 0.5em 1em;
+    background-color: #111010;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 2;
+    /* border-bottom: 2px solid rgb(167, 167, 167); */
+    /* border-top: 2px solid rgb(167, 167, 167); */
+}
+
+
+.hsd-title {
+    /* font-family: 'Yellowtail', cursive; */
+    font-family: 'Kaushan Script', cursive;
+    font-size: 28pt;
+    letter-spacing: 0.05em;
+    color: rgba(252, 156, 0, 0.834);
+    /* text-shadow: 0 0 2px rgb(255, 158, 1); */
+
+}
+
+main {
+    padding: 1em;
+}
+
+.menu {
+    position: relative;
+}
+
+.menu-toggle {
+    border: 0;
+    background-color: transparent;
+    color: rgb(218, 218, 218);
+}
+
+
+.menu-dropdown {
+    display: none;
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: 0;
+}
+
+.menu.is-open .menu-dropdown {
+    display: block;
+}
+
+.nav-menu {
+    margin: 0;
+    padding-left: 0;
+    border-top: 1px solid #ccc; 
+    list-style: none;
+    background-color: #111010;
+    font-family: 'Mate', serif;
+    font-size: 18pt;
+}
+
+.nav-menu>li+li {
+    border-top: 1px solid #ccc;
+}
+
+.nav-menu>li>a {
+    
+    display: block;
+    padding: 0.5em 1em;
+    font-weight: normal;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
+.dropdown_menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    perspective: 1000px;
+    z-index: 1;
+    animation: fadeIn 0.5s;
+}
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-15px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero {
+    padding: 3em 1em 0em 1em;
+    height: 13rem;
+    text-align: center;
+    color: #000000;
+    z-index: -1;
+}
+
+.hero-1 {
+    font-family: 'Mate', serif;
+    font-size: 25pt;
+}
+
+.hero-2 {
+    font-family: 'Prompt', sans-serif;
+    font-size: 12pt;
+}
+
+.notice {
+    margin: 10px;
+    padding: 5px;
+    border: rgba(246, 250, 23, 0.825) 3px solid;
+    border-radius: 10px;
+    background-color: rgba(255, 247, 0, 0.7);
+    color: #000000;
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    font-family: Gabarito;
+}
+
+.noticeIcon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainImg {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 4rem;
+}
+
+.mImg {
+    padding: 1em;
+    width: 100%;
+    border-radius: 25px;
+}
+
+
+.viewMenuBtn{
+    padding: 1em 1em;
+}
+
+.vMBtn{
+    border: none ;
+    border-radius: 5px;
+    background-color: #111010;
+    font-size: 12pt;
+    font-family: 'Mate', serif;
+
+    padding: 0.8em 0.5em;
+    color: #ffffff;
+    width: 100%;
+}
+
+
+footer {
+    font-family: Gabarito;
+    color: aliceblue;
+    background-color: #002E4B;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    row-gap: 4em;
+}
+
+.mainFooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.contactFooter {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5em;
+}
+
+.contactTitle {
+    font-size: 17pt;
+}
+
+.footerItem {
+    font-size: 12pt;
+}
+
+.copyright {
+    font-size: 10pt;
+}
+
+
+.accredMain {
+    padding: 1em;
+    font-family: Gabarito;
+    margin-bottom: 3em;
+}
+
+
+.accredTitle {
+    font-size: 17pt;
+    margin-bottom: 1em;
+}
+
+.accreditations {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 0.5em;
+    row-gap: 0.5em;
+    justify-content: space-between;
+}
+
+.logo {
+    flex-basis: 45%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.bdaLogo {
+    width: 100%;
+}
+
+.bmaLogo {
+    width: 100%;
+    background-color: #002E4B;
+
+}
+
+.gdcLogo {
+    width: 100%;
+}
+
+.bmaLogoCont {
+    flex-basis: 45%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
